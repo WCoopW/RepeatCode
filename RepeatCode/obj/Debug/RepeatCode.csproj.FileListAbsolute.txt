@@ -1,0 +1,8 @@
+E:\Projects\RepeatCode\RepeatCode\bin\Debug\RepeatCode.exe.config
+E:\Projects\RepeatCode\RepeatCode\bin\Debug\RepeatCode.exe
+E:\Projects\RepeatCode\RepeatCode\bin\Debug\RepeatCode.pdb
+E:\Projects\RepeatCode\RepeatCode\obj\Debug\RepeatCode.csproj.AssemblyReference.cache
+E:\Projects\RepeatCode\RepeatCode\obj\Debug\RepeatCode.csproj.SuggestedBindingRedirects.cache
+E:\Projects\RepeatCode\RepeatCode\obj\Debug\RepeatCode.csproj.CoreCompileInputs.cache
+E:\Projects\RepeatCode\RepeatCode\obj\Debug\RepeatCode.exe
+E:\Projects\RepeatCode\RepeatCode\obj\Debug\RepeatCode.pdb
