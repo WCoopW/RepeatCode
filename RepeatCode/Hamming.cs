@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 
 namespace RepeatCode
 {
-    internal class Hamming
+    #region HammingCode1
+    public class Hamming
     {
-        static BitArray Code(string inMessage)
+        public  BitArray Code(string inMessage)
         {
             var messageArray = new BitArray(inMessage.Length, false);
             for (int i = 0; i < inMessage.Length; i++)
@@ -59,7 +60,7 @@ namespace RepeatCode
             return retArray;
         }
 
-        static BitArray Decode(string inMessage)
+        public  BitArray Decode(string inMessage)
         {
             var codedArray = new BitArray(inMessage.Length, false);
             for (int i = 0; i < codedArray.Length; i++)
@@ -124,6 +125,25 @@ namespace RepeatCode
             }
             return decodedArray;
         }
+        public double HammingCodeError(int n, int k, double p)
+        {
+            int choose = 1;
+            double errorProbability = 0.0;
+
+            for (int i = 1; i <= k; i++)
+            {
+                errorProbability += choose * Math.Pow(p, i) * Math.Pow(1 - p, n - i);
+                choose = choose * (n - i) / i;
+            }
+            double P_err = 1 - Math.Pow(1 - p, k);
+            // errorProbability *= Math.Pow(p, n - k);
+
+            return P_err;
+            //errorProbability;
+        }
 
     }
+    #endregion
+    
+    
 }
