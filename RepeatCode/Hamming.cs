@@ -136,9 +136,9 @@ namespace RepeatCode
                 choose = choose * (n - i) / i;
             }
             double P_err = 1 - Math.Pow(1 - p, k);
-            // errorProbability *= Math.Pow(p, n - k);
+             errorProbability *= Math.Pow(p, n - k);
 
-            return P_err;
+            return errorProbability;
             //errorProbability;
         }
 
